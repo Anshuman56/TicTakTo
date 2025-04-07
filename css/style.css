@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+}
+.frame {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 3rem auto;
+  width: 300px;
+}
+.cell {
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  font-family: sans-serif;
+  font-size: 5rem;
+  cursor: pointer;
+}
