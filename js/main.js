@@ -16,4 +16,5 @@ function addChoice() {
 
 function resetGame() {
   cells.forEach((item) => (item.textContent = ""));
+  currentChoice = 'X'
 }
