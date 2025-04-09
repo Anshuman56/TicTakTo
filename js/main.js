@@ -1,10 +1,13 @@
+let ticTacToe = {};
 let cells = document.querySelectorAll(".cell");
 let reset = document.querySelector(".reset");
-console.log(reset);
+
 cells.forEach((item) => item.addEventListener("click", addChoice));
 reset.addEventListener("click", resetGame);
+
 let currentChoice = "X";
 function addChoice() {
+  if (this.textContent !== "") return;
   if (currentChoice === "X") {
     this.textContent = "X";
     currentChoice = "O";
@@ -16,5 +19,5 @@ function addChoice() {
 
 function resetGame() {
   cells.forEach((item) => (item.textContent = ""));
-  currentChoice = 'X'
+  currentChoice = "X";
 }
